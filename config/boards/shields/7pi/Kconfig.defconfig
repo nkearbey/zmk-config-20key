@@ -10,10 +10,10 @@ config ZMK_USB
 config ZMK_KEYBOARD_NAME
 	default "20key"
 
-if SHIELD_20KEY_DONGLE
-
 config ZMK_SPLIT
 	default y
+
+if SHIELD_20KEY_DONGLE
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
