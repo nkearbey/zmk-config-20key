@@ -1,5 +1,5 @@
 include:
   - board: nice_nano_v2
     shield: 20key
-  - board: raytac_mdbt50q_rx
+  - board: nice_nano_v2
     shield: 20key_dongle
