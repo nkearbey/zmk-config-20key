@@ -1,11 +1,18 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-config ZMK_BLE
-	default y
+if SHIELD_20KEY_DONGLE
 
-config ZMK_USB
-	default y
+    config ZMK_KEYBOARD_NAME
+        default "20"
 
-config ZMK_KEYBOARD_NAME
-	default "20key"
+    config ZMK_SPLIT_BLE_ROLE_CENTRAL
+        default y
+endif
+
+if SHIELD_20KEY_DONGLE || SHIELD_20KEY
+
+    config ZMK_SPLIT
+        default y
+
+endif
